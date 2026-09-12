@@ -302,7 +302,7 @@
             </div>
             <div>
               <label for="site-contact-phone" style="display:block;margin-bottom:8px;font-weight:700;">Contact phone</label>
-              <input id="site-contact-phone" type="text" placeholder="+233 (0) 00 000 0000" style="width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;" required />
+              <input id="site-contact-phone" type="text" placeholder="+14375007180" style="width:100%;padding:12px 14px;border:1px solid var(--line);border-radius:12px;" required />
             </div>
             <button type="submit" class="link-btn" style="background:#0d7c5f;border:none;cursor:pointer;padding:12px 18px;">Save contact info</button>
           </form>
@@ -509,7 +509,7 @@
           const phoneField = document.getElementById('site-contact-phone');
           const settings = result.data || {};
           if (emailField) emailField.value = settings.contactEmail || 'fundariscredit0@gmail.com';
-          if (phoneField) phoneField.value = settings.contactPhone || '+233 (0) 00 000 0000';
+          if (phoneField) phoneField.value = settings.contactPhone || '+14375007180';
         } catch (error) {
           console.error('Unable to load site settings', error);
         }

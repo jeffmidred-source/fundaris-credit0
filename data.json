@@ -7,6 +7,22 @@
       "phone": "+233 20 000 0000",
       "message": "I would like to know more about your loan products.",
       "createdAt": "2026-09-12T16:04:50.816Z"
+    },
+    {
+      "id": 2,
+      "name": "Ama Mensah",
+      "email": "ama@example.com",
+      "phone": "+233 20 000 0000",
+      "message": "I would like to know more about your loan products.",
+      "createdAt": "2026-09-12T23:10:43.842Z"
+    },
+    {
+      "id": 3,
+      "name": "Ama Mensah",
+      "email": "ama@example.com",
+      "phone": "+233 20 000 0000",
+      "message": "I would like to know more about your loan products.",
+      "createdAt": "2026-09-12T23:25:13.403Z"
     }
   ],
   "loanApplications": [
@@ -21,6 +37,30 @@
       "term": "12 months",
       "status": "Approved",
       "createdAt": "2026-09-12T16:04:50.884Z"
+    },
+    {
+      "id": 2,
+      "userId": 10,
+      "name": "Kojo Mensah",
+      "email": "wallet.1789254643903@example.com",
+      "phone": "+233 20 777 0000",
+      "product": "Business Loan",
+      "amount": "1500",
+      "term": "12 months",
+      "status": "Approved",
+      "createdAt": "2026-09-12T23:10:43.916Z"
+    },
+    {
+      "id": 3,
+      "userId": 15,
+      "name": "Kojo Mensah",
+      "email": "wallet.1789255513468@example.com",
+      "phone": "+233 20 777 0000",
+      "product": "Business Loan",
+      "amount": "1500",
+      "term": "12 months",
+      "status": "Approved",
+      "createdAt": "2026-09-12T23:25:13.491Z"
     }
   ],
   "users": [
@@ -176,6 +216,297 @@
           "adminReviewed": true
         }
       ]
+    },
+    {
+      "id": 7,
+      "fullName": "kkjujkjh",
+      "email": "mhh2hk@gmail.com",
+      "phone": "98666",
+      "passwordHash": "2dc63e60b38924f9af7c62795bcadac4dbffa25e69e09970717f8910eca8927e",
+      "createdAt": "2026-09-12T17:17:58.248Z",
+      "loanStatus": "Not submitted",
+      "balance": 0,
+      "availableBalance": 0,
+      "totalWithdrawn": 0,
+      "verificationItems": [],
+      "withdrawalHistory": [],
+      "depositHistory": []
+    },
+    {
+      "id": 8,
+      "fullName": "Nana Owusu",
+      "email": "nana.1789254643858@example.com",
+      "phone": "+233 20 555 0000",
+      "passwordHash": "d7440805ab260d5ed42b3f16ea7f47d1df0e3db9b6becaad36dc04048762cb1a",
+      "createdAt": "2026-09-12T23:10:43.865Z",
+      "loanStatus": "Not submitted",
+      "balance": 0,
+      "availableBalance": 0,
+      "totalWithdrawn": 0,
+      "verificationItems": [],
+      "withdrawalHistory": [],
+      "depositHistory": []
+    },
+    {
+      "id": 9,
+      "fullName": "Akosua Boateng",
+      "email": "review.1789254643880@example.com",
+      "phone": "+233 20 666 0000",
+      "passwordHash": "d7440805ab260d5ed42b3f16ea7f47d1df0e3db9b6becaad36dc04048762cb1a",
+      "createdAt": "2026-09-12T23:10:43.885Z",
+      "loanStatus": "Not submitted",
+      "balance": 0,
+      "availableBalance": 0,
+      "totalWithdrawn": 0,
+      "verificationItems": [
+        {
+          "id": 2,
+          "documentType": "id_card",
+          "fileName": "akosua-id.png",
+          "fileUrl": "https://example.com/akosua-id.png",
+          "reviewed": true,
+          "reviewDecision": "Approved"
+        }
+      ],
+      "withdrawalHistory": [],
+      "depositHistory": []
+    },
+    {
+      "id": 10,
+      "fullName": "Kojo Mensah",
+      "email": "wallet.1789254643903@example.com",
+      "phone": "+233 20 777 0000",
+      "passwordHash": "d7440805ab260d5ed42b3f16ea7f47d1df0e3db9b6becaad36dc04048762cb1a",
+      "createdAt": "2026-09-12T23:10:43.908Z",
+      "loanStatus": "Approved",
+      "balance": 1000,
+      "availableBalance": 1000,
+      "totalWithdrawn": 500,
+      "verificationItems": [],
+      "withdrawalHistory": [
+        {
+          "id": 1789254643938,
+          "type": "withdrawal_request",
+          "method": "bitcoin",
+          "amount": 500,
+          "walletAddress": "bc1qexamplewalletaddress",
+          "createdAt": "2026-09-12T23:10:43.938Z",
+          "status": "approved",
+          "reviewedAt": "2026-09-12T23:10:43.944Z",
+          "adminReviewed": true,
+          "adminNote": "Approved by admin."
+        },
+        {
+          "id": 1789254643931,
+          "type": "admin_funding",
+          "amount": 1500,
+          "createdAt": "2026-09-12T23:10:43.931Z",
+          "status": "completed"
+        }
+      ],
+      "depositHistory": [],
+      "lastUpdated": "2026-09-12T23:10:43.924Z"
+    },
+    {
+      "id": 11,
+      "fullName": "Akua Nkrumah",
+      "email": "notes.1789254643952@example.com",
+      "phone": "+233 20 888 0000",
+      "passwordHash": "d7440805ab260d5ed42b3f16ea7f47d1df0e3db9b6becaad36dc04048762cb1a",
+      "createdAt": "2026-09-12T23:10:43.955Z",
+      "loanStatus": "Approved",
+      "balance": 800,
+      "availableBalance": 800,
+      "totalWithdrawn": 200,
+      "verificationItems": [],
+      "withdrawalHistory": [
+        {
+          "id": 1789254643975,
+          "type": "withdrawal_request",
+          "method": "usdt",
+          "amount": 200,
+          "walletAddress": "TQf9gk...example",
+          "createdAt": "2026-09-12T23:10:43.975Z",
+          "status": "approved",
+          "reviewedAt": "2026-09-12T23:10:43.980Z",
+          "adminReviewed": true,
+          "adminNote": "Approved after verification."
+        },
+        {
+          "id": 1789254643966,
+          "type": "admin_funding",
+          "amount": 1000,
+          "createdAt": "2026-09-12T23:10:43.966Z",
+          "status": "completed"
+        }
+      ],
+      "depositHistory": []
+    },
+    {
+      "id": 12,
+      "fullName": "Esi Owusu",
+      "email": "deposit.1789254643989@example.com",
+      "phone": "+233 20 999 0000",
+      "passwordHash": "d7440805ab260d5ed42b3f16ea7f47d1df0e3db9b6becaad36dc04048762cb1a",
+      "createdAt": "2026-09-12T23:10:43.994Z",
+      "loanStatus": "Not submitted",
+      "balance": 250,
+      "availableBalance": 250,
+      "totalWithdrawn": 0,
+      "verificationItems": [],
+      "withdrawalHistory": [],
+      "depositHistory": [
+        {
+          "id": 1789254644012,
+          "type": "deposit_request",
+          "method": "paypal",
+          "amount": 250,
+          "reference": "PAY-2026-001",
+          "walletAddress": "paypal@kumasiafricablc.com",
+          "createdAt": "2026-09-12T23:10:44.012Z",
+          "status": "approved",
+          "reviewedAt": "2026-09-12T23:10:44.017Z",
+          "adminReviewed": true
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "fullName": "Nana Owusu",
+      "email": "nana.1789255513415@example.com",
+      "phone": "+233 20 555 0000",
+      "passwordHash": "d7440805ab260d5ed42b3f16ea7f47d1df0e3db9b6becaad36dc04048762cb1a",
+      "createdAt": "2026-09-12T23:25:13.423Z",
+      "loanStatus": "Not submitted",
+      "balance": 0,
+      "availableBalance": 0,
+      "totalWithdrawn": 0,
+      "verificationItems": [],
+      "withdrawalHistory": [],
+      "depositHistory": []
+    },
+    {
+      "id": 14,
+      "fullName": "Akosua Boateng",
+      "email": "review.1789255513441@example.com",
+      "phone": "+233 20 666 0000",
+      "passwordHash": "d7440805ab260d5ed42b3f16ea7f47d1df0e3db9b6becaad36dc04048762cb1a",
+      "createdAt": "2026-09-12T23:25:13.447Z",
+      "loanStatus": "Not submitted",
+      "balance": 0,
+      "availableBalance": 0,
+      "totalWithdrawn": 0,
+      "verificationItems": [
+        {
+          "id": 3,
+          "documentType": "id_card",
+          "fileName": "akosua-id.png",
+          "fileUrl": "https://example.com/akosua-id.png",
+          "reviewed": true,
+          "reviewDecision": "Approved"
+        }
+      ],
+      "withdrawalHistory": [],
+      "depositHistory": []
+    },
+    {
+      "id": 15,
+      "fullName": "Kojo Mensah",
+      "email": "wallet.1789255513468@example.com",
+      "phone": "+233 20 777 0000",
+      "passwordHash": "d7440805ab260d5ed42b3f16ea7f47d1df0e3db9b6becaad36dc04048762cb1a",
+      "createdAt": "2026-09-12T23:25:13.484Z",
+      "loanStatus": "Approved",
+      "balance": 1000,
+      "availableBalance": 1000,
+      "totalWithdrawn": 500,
+      "verificationItems": [],
+      "withdrawalHistory": [
+        {
+          "id": 1789255513518,
+          "type": "withdrawal_request",
+          "method": "bitcoin",
+          "amount": 500,
+          "walletAddress": "bc1qexamplewalletaddress",
+          "createdAt": "2026-09-12T23:25:13.518Z",
+          "status": "approved",
+          "reviewedAt": "2026-09-12T23:25:13.526Z",
+          "adminReviewed": true,
+          "adminNote": "Approved by admin."
+        },
+        {
+          "id": 1789255513511,
+          "type": "admin_funding",
+          "amount": 1500,
+          "createdAt": "2026-09-12T23:25:13.511Z",
+          "status": "completed"
+        }
+      ],
+      "depositHistory": [],
+      "lastUpdated": "2026-09-12T23:25:13.501Z"
+    },
+    {
+      "id": 16,
+      "fullName": "Akua Nkrumah",
+      "email": "notes.1789255513538@example.com",
+      "phone": "+233 20 888 0000",
+      "passwordHash": "d7440805ab260d5ed42b3f16ea7f47d1df0e3db9b6becaad36dc04048762cb1a",
+      "createdAt": "2026-09-12T23:25:13.543Z",
+      "loanStatus": "Approved",
+      "balance": 800,
+      "availableBalance": 800,
+      "totalWithdrawn": 200,
+      "verificationItems": [],
+      "withdrawalHistory": [
+        {
+          "id": 1789255513557,
+          "type": "withdrawal_request",
+          "method": "usdt",
+          "amount": 200,
+          "walletAddress": "TQf9gk...example",
+          "createdAt": "2026-09-12T23:25:13.557Z",
+          "status": "approved",
+          "reviewedAt": "2026-09-12T23:25:13.563Z",
+          "adminReviewed": true,
+          "adminNote": "Approved after verification."
+        },
+        {
+          "id": 1789255513550,
+          "type": "admin_funding",
+          "amount": 1000,
+          "createdAt": "2026-09-12T23:25:13.550Z",
+          "status": "completed"
+        }
+      ],
+      "depositHistory": []
+    },
+    {
+      "id": 17,
+      "fullName": "Esi Owusu",
+      "email": "deposit.1789255513572@example.com",
+      "phone": "+233 20 999 0000",
+      "passwordHash": "d7440805ab260d5ed42b3f16ea7f47d1df0e3db9b6becaad36dc04048762cb1a",
+      "createdAt": "2026-09-12T23:25:13.576Z",
+      "loanStatus": "Not submitted",
+      "balance": 250,
+      "availableBalance": 250,
+      "totalWithdrawn": 0,
+      "verificationItems": [],
+      "withdrawalHistory": [],
+      "depositHistory": [
+        {
+          "id": 1789255513593,
+          "type": "deposit_request",
+          "method": "paypal",
+          "amount": 250,
+          "reference": "PAY-2026-001",
+          "walletAddress": "paypal@kumasiafricablc.com",
+          "createdAt": "2026-09-12T23:25:13.593Z",
+          "status": "approved",
+          "reviewedAt": "2026-09-12T23:25:13.598Z",
+          "adminReviewed": true
+        }
+      ]
     }
   ],
   "verificationUploads": [
@@ -189,9 +520,65 @@
       "reviewed": true,
       "reviewDecision": "Approved",
       "reviewedAt": "2026-09-12T16:04:50.872Z"
+    },
+    {
+      "id": 2,
+      "userId": 9,
+      "documentType": "id_card",
+      "fileName": "akosua-id.png",
+      "fileUrl": "https://example.com/akosua-id.png",
+      "uploadedAt": "2026-09-12T23:10:43.892Z",
+      "reviewed": true,
+      "reviewDecision": "Approved",
+      "reviewedAt": "2026-09-12T23:10:43.899Z"
+    },
+    {
+      "id": 3,
+      "userId": 14,
+      "documentType": "id_card",
+      "fileName": "akosua-id.png",
+      "fileUrl": "https://example.com/akosua-id.png",
+      "uploadedAt": "2026-09-12T23:25:13.456Z",
+      "reviewed": true,
+      "reviewDecision": "Approved",
+      "reviewedAt": "2026-09-12T23:25:13.464Z"
     }
   ],
   "chatMessages": [
+    {
+      "id": 2,
+      "visitorName": "Jane Visitor",
+      "visitorEmail": "jane@example.com",
+      "sourcePage": "homepage",
+      "status": "new",
+      "createdAt": "2026-09-12T23:25:13.384Z",
+      "message": "I need help with my account balance.",
+      "messages": [
+        {
+          "id": 1,
+          "sender": "visitor",
+          "text": "I need help with my account balance.",
+          "createdAt": "2026-09-12T23:25:13.384Z"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "visitorName": "Jane Visitor",
+      "visitorEmail": "jane@example.com",
+      "sourcePage": "homepage",
+      "status": "new",
+      "createdAt": "2026-09-12T23:10:43.822Z",
+      "message": "I need help with my account balance.",
+      "messages": [
+        {
+          "id": 1,
+          "sender": "visitor",
+          "text": "I need help with my account balance.",
+          "createdAt": "2026-09-12T23:10:43.822Z"
+        }
+      ]
+    },
     {
       "id": 1,
       "visitorName": "Jane Visitor",
@@ -212,7 +599,7 @@
   ],
   "siteSettings": {
     "contactEmail": "fundariscredit0@gmail.com",
-    "contactPhone": "+233 (0) 00 000 0000",
+    "contactPhone": "+14375007180",
     "currency": "USD"
   },
   "depositWallets": [
@@ -224,9 +611,9 @@
     },
     {
       "method": "bank_transfer",
-      "label": "Bank Transfer",
-      "address": "Bank: Access Bank Ghana\nAccount Name: FUNDARIS CREDIT\nAccount Number: 0012345678",
-      "note": "Bank transfer details for direct deposits."
+      "label": "International Bank Transfer",
+      "address": "Bank: Global Treasury Services\nAccount Name: FUNDARIS CREDIT\nAccount Number: 0012345678\nSWIFT: GTSUS33",
+      "note": "Use these details to complete a secure international transfer."
     },
     {
       "method": "bitcoin",

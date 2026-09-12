@@ -13,12 +13,12 @@ function ensureDb() {
       chatMessages: [],
       siteSettings: {
         contactEmail: 'fundariscredit0@gmail.com',
-        contactPhone: '+233 (0) 00 000 0000',
+        contactPhone: '+14375007180',
         currency: 'USD'
       },
       depositWallets: [
         { method: 'paypal', label: 'PayPal', address: 'paypal@fundariscredit.com', note: 'Use your PayPal email to deposit into your FUNDARIS CREDIT account.' },
-        { method: 'bank_transfer', label: 'Bank Transfer', address: 'Bank: Access Bank Ghana\nAccount Name: FUNDARIS CREDIT\nAccount Number: 0012345678', note: 'Bank transfer details for direct deposits.' },
+        { method: 'bank_transfer', label: 'International Bank Transfer', address: 'Bank: Global Treasury Services\nAccount Name: FUNDARIS CREDIT\nAccount Number: 0012345678\nSWIFT: GTSUS33', note: 'Use these details to complete a secure international transfer.' },
         { method: 'bitcoin', label: 'Bitcoin', address: 'bc1qfundariscreditbitcoinwallet', note: 'BTC wallet address for Bitcoin deposits.' },
         { method: 'usdt', label: 'USDT (TRC20)', address: 'TQf9gk7rR1x2Qm6J9d4Hyr7mYV7K6u5Wde', note: 'USDT wallet address for TRC20 deposits.' },
         { method: 'eth', label: 'ETH', address: '0x8D7eF925B7D9f2508D5d39b7e7C5f5c0d4a6Ee0F', note: 'ERC20 ETH wallet address for ETH deposits.' },
@@ -41,7 +41,7 @@ function readDb() {
       chatMessages: parsed.chatMessages || [],
       siteSettings: parsed.siteSettings || {
         contactEmail: 'fundariscredit0@gmail.com',
-        contactPhone: '+233 (0) 00 000 0000',
+        contactPhone: '+14375007180',
         currency: 'USD'
       },
       depositWallets: parsed.depositWallets || []
@@ -55,7 +55,7 @@ function readDb() {
       chatMessages: [],
       siteSettings: {
         contactEmail: 'fundariscredit0@gmail.com',
-        contactPhone: '+233 (0) 00 000 0000',
+        contactPhone: '+14375007180',
         currency: 'USD'
       },
       depositWallets: []
