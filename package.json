@@ -1,0 +1,21 @@
+﻿{
+  "name": "fundaris-credit",
+  "version": "1.0.0",
+  "description": "FUNDARIS CREDIT finance landing page with backend form processing",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "nodemailer": "^6.9.14",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}
+
