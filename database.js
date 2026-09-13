@@ -65,7 +65,9 @@ function readDb() {
 
 function writeDb(data) {
   ensureDb();
-  fs.writeFileSync(dbPath, JSON.stringify(data, null, 2));
+  const tempPath = `${dbPath}.tmp`;
+  fs.writeFileSync(tempPath, JSON.stringify(data, null, 2));
+  fs.renameSync(tempPath, dbPath);
 }
 
 module.exports = { readDb, writeDb, dbPath };

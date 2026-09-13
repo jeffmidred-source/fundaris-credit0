@@ -398,10 +398,8 @@ app.get('/api/dashboard', async (req, res) => {
   if (DB_MODE === 'sqlite') {
     try {
       contactSubmissions = await getAllSubmissions();
-      loanApplications = await getAllApplications();
     } catch (error) {
       contactSubmissions = db.contactSubmissions;
-      loanApplications = db.loanApplications;
     }
   }
 

@@ -95,6 +95,38 @@ test('POST /api/register and /api/login create a customer account and allow stat
   assert.equal(statusRes.body.user.email, uniqueEmail);
 });
 
+test('authenticated loan applications are visible in the admin dashboard', async () => {
+  const uniqueEmail = `admin-loan.${Date.now()}@example.com`;
+
+  const registerRes = await request(app)
+    .post('/api/register')
+    .send({
+      fullName: 'Admin Loan Applicant',
+      email: uniqueEmail,
+      phone: '+233 20 555 1111',
+      password: 'StrongPass1!'
+    });
+
+  const loanRes = await request(app)
+    .post('/api/user/loan-application')
+    .send({
+      userId: registerRes.body.user.id,
+      product: 'Personal Loan',
+      amount: '5000',
+      term: '12 months'
+    });
+
+  assert.equal(loanRes.status, 201);
+
+  const dashboardRes = await request(app).get('/api/dashboard');
+  const application = dashboardRes.body.loanApplications.find((item) => item.id === loanRes.body.data.id);
+
+  assert.equal(dashboardRes.status, 200);
+  assert.ok(application);
+  assert.equal(application.email, uniqueEmail);
+  assert.equal(application.status, 'Pending review');
+});
+
 test('POST /api/admin/review-verification updates uploaded verification status', async () => {
   const uniqueEmail = `review.${Date.now()}@example.com`;
 
